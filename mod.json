@@ -1,0 +1,20 @@
+{
+	"namespace": "Roulette",
+	"displayName": "Roulette",
+	"version": "2.5.0",
+	"synchronyVersion": "4.1.0",
+	"description": "Play *Roulette* with your friends.",
+	"author": "J‌a‌g‌Y‌a‌y‌u‏☣",
+	"dependencies": {},
+	"api": {"scriptPath":"Roulette"},
+	"icon": "gfx/Icon.png",
+	"banner": "gfx/Banner.png",
+	"tags": [],
+	"name": "Roulette_io_3981946",
+	"changelog": "",
+	"homepageURL": "https://mod.io/g/crypt/m/roulette",
+	"modioID": "3981946",
+	"modioUserID": 13661250,
+	"pendingVersion": "2.5.0",
+	"visibility": 0
+}

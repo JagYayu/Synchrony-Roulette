@@ -1,0 +1,13 @@
+{
+  "configs": [
+    {
+      "name": "Lua.runtime.version",
+      "type": "set",
+      "value": "LuaJIT"
+    }
+  ],
+  "name": "necro",
+  "words": [
+    "necro"
+  ]
+}

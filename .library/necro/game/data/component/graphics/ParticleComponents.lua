@@ -1,0 +1,254 @@
+--- @meta
+
+local ParticleComponents = {}
+
+--- @class Component.particleRingConfusion
+--- @field texture string # `= "ext/particles/TEMP_particle_confuse.png"` 
+--- @field particleCount integer # `= 8` 
+--- @field offsetX number # `= -1` 
+--- @field offsetY number # `= -1` 
+--- @field radiusX number # `= 7.2` 
+--- @field radiusY number # `= 3.6` 
+--- @field rotationPeriod number # `= 3.5` 
+--- @field blinkPeriod number # `= 10 / 60` 
+
+--- @class Component.particleBarrier
+--- @field frontTexture string # `= "ext/spells/shield_front.png"` 
+--- @field backTexture string # `= "ext/spells/shield_back.png"` 
+--- @field width integer # `= 34` 
+--- @field height integer # `= 35` 
+--- @field offsetX integer # `= 0` 
+--- @field offsetY integer # `= 6` 
+--- @field frontZ number # `= 11` 
+--- @field backZ number # `= -14` 
+--- @field numFrames integer # `= 3` 
+--- @field animationPeriod number # `= 0.4` 
+--- @field blinkPeriod number # `= 10 / 60` 
+
+--- @class Component.particleFreeze
+--- @field texture string # `= "ext/entities/frozen_feet_medium.png"` 
+--- @field width integer # `= 31` 
+--- @field height integer # `= 24` 
+--- @field offsetX integer # `= -2` 
+--- @field offsetY integer # `= 4` 
+--- @field offsetZ integer # `= 4` 
+--- @field silhouette boolean # `= true` 
+--- @field blinkPeriod number # `= 10 / 60` 
+
+--- @class Component.particleMoleDirt
+--- @field texture string # `= "ext/entities/mole_dirt.png"` 
+--- @field duration number # `= 1.6` 
+--- @field width integer # `= 24` 
+--- @field height integer # `= 24` 
+--- @field offsetX integer # `= 0` 
+--- @field offsetY integer # `= -2` 
+
+--- @class Component.particlePuff
+--- @field texture string # `= "ext/particles/TEMP_particle_heal.png"` 
+--- @field particleCount integer # `= 25` 
+--- @field duration number # `= 2.25` 
+--- @field maxDelay number # `= 0.75` 
+--- @field fadeDelay number # `= 1` 
+--- @field fadeTime number # `= 0.5` 
+--- @field minOpacity number # `= 0.6` 
+--- @field radius number # `= 12` 
+--- @field zVelocity number # `= 75` 
+--- @field gravity number # `= -1.8` 
+
+--- @class Component.particleSink
+--- @field texture string # `= "ext/particles/TEMP_particle_water.png"` Texture is normally overriden by the liquid’s tileInfo, this only provides a default.
+--- @field particleCount integer # `= 11` 
+--- @field duration number # `= 0.784` 
+--- @field minDelay number # `= 0.1` 
+--- @field maxDelay number # `= 0.2` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 7.2` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= 2.4` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 360` 
+--- @field explosiveness number # `= 3` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Component.particleUnsink
+--- @field texture string # `= "ext/particles/TEMP_particle_water.png"` Texture is normally overriden by the liquid’s tileInfo, this only provides a default.
+--- @field particleCount integer # `= 7` 
+--- @field duration number # `= 0.684` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0.1` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 7.2` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= 2.4` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 360` 
+--- @field explosiveness number # `= 3` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Component.particleTakeDamage
+--- @field minimumDamage integer # `= 1` 
+--- @field texture string # `= "ext/particles/TEMP_particle_blood.png"` 
+--- @field particleCount integer # `= 5` 
+--- @field deathParticleCount integer # `= 15` 
+--- @field duration number # `= 0.684` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0.1` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 7.2` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= -6` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 360` 
+--- @field explosiveness number # `= 6` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Component.particleSplash
+--- @field texture string # `= "ext/particles/TEMP_particle_white.png"` 
+--- @field particleCount integer # `= 30` 
+--- @field duration number # `= 0.6` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0.1` 
+--- @field fadeDelay number # `= 0.333` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.7` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 7.2` 
+--- @field velocity number # `= 24` 
+--- @field offsetY number # `= -6` 
+--- @field offsetZ number # `= 10.8` 
+--- @field gravity number # `= 144` 
+--- @field explosiveness number # `= 2.4` 
+--- @field bounciness number # `= 0` 
+
+--- @class Component.particleDismount
+--- @field texture string # `= "ext/particles/skeleton_helmet1.png"` 
+--- @field particleCount integer # `= 1` 
+--- @field duration number # `= 1.25` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0` 
+--- @field fadeDelay number # `= 0.667` 
+--- @field fadeTime number # `= 0.583` 
+--- @field minOpacity number # `= 1` 
+--- @field spread number # `= 3` 
+--- @field velocity number # `= 168` 
+--- @field offsetY number # `= -6` 
+--- @field offsetZ number # `= 19.2` 
+--- @field gravity number # `= 450` 
+--- @field explosiveness number # `= 3` 
+--- @field bounciness number # `= 0.45` 
+
+--- @class Component.particleShieldBreak
+--- @field texture string # `= "ext/particles/skeleton_shield1.png"` 
+--- @field particleCount integer # `= 1` 
+--- @field duration number # `= 1.25` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0` 
+--- @field fadeDelay number # `= 0.667` 
+--- @field fadeTime number # `= 0.583` 
+--- @field minOpacity number # `= 1` 
+--- @field spread number # `= 3` 
+--- @field velocity number # `= 168` 
+--- @field offsetY number # `= -6` 
+--- @field offsetZ number # `= 19.2` 
+--- @field gravity number # `= 450` 
+--- @field explosiveness number # `= 3` 
+--- @field bounciness number # `= 0.45` 
+
+--- @class Component.particleBeheading
+--- @field texture string # `= "ext/particles/skeleton_head_yellow.png"` 
+--- @field particleCount integer # `= 1` 
+--- @field duration number # `= 1.25` 
+--- @field minDelay number # `= 0` 
+--- @field maxDelay number # `= 0` 
+--- @field fadeDelay number # `= 0.667` 
+--- @field fadeTime number # `= 0.583` 
+--- @field minOpacity number # `= 1` 
+--- @field spread number # `= 3` 
+--- @field velocity number # `= 138` 
+--- @field offsetY number # `= -6` 
+--- @field offsetZ number # `= 19.2` 
+--- @field gravity number # `= 450` 
+--- @field explosiveness number # `= 3` 
+--- @field bounciness number # `= 0.45` 
+
+--- @class Component.particleSpawn
+--- @field texture string # `= "ext/particles/TEMP_particle_dirt.png"` 
+--- @field particleCount integer # `= 30` 
+--- @field duration number # `= 0.784` 
+--- @field minDelay number # `= 0.1` 
+--- @field maxDelay number # `= 0.2` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 12` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= 0` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 810` 
+--- @field explosiveness number # `= 3.6` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Component.particleMove
+--- @field texture string # `= "ext/particles/TEMP_particle_dirt.png"` 
+--- @field particleCount integer # `= 30` 
+--- @field duration number # `= 0.784` 
+--- @field minDelay number # `= 0.1` 
+--- @field maxDelay number # `= 0.2` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 12` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= 0` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 810` 
+--- @field explosiveness number # `= 3.6` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Component.particleUnstasis
+--- @field texture string # `= "ext/particles/TEMP_particle_dirt.png"` 
+--- @field particleCount integer # `= 60` 
+--- @field duration number # `= 0.784` 
+--- @field minDelay number # `= 0.1` 
+--- @field maxDelay number # `= 0.2` 
+--- @field fadeDelay number # `= 0.417` 
+--- @field fadeTime number # `= 0.167` 
+--- @field minOpacity number # `= 0.6` 
+--- @field maxSize number # `= 2` 
+--- @field spread number # `= 14.4` 
+--- @field velocity number # `= 114` 
+--- @field offsetY number # `= 0` 
+--- @field offsetZ number # `= 7.2` 
+--- @field gravity number # `= 810` 
+--- @field explosiveness number # `= 3.6` 
+--- @field bounciness number # `= 0.3` 
+
+--- @class Entity
+--- @field particleRingConfusion Component.particleRingConfusion
+--- @field particleBarrier Component.particleBarrier
+--- @field particleFreeze Component.particleFreeze
+--- @field particleMoleDirt Component.particleMoleDirt
+--- @field particlePuff Component.particlePuff
+--- @field particleSink Component.particleSink
+--- @field particleUnsink Component.particleUnsink
+--- @field particleTakeDamage Component.particleTakeDamage
+--- @field particleSplash Component.particleSplash
+--- @field particleDismount Component.particleDismount
+--- @field particleShieldBreak Component.particleShieldBreak
+--- @field particleBeheading Component.particleBeheading
+--- @field particleSpawn Component.particleSpawn
+--- @field particleMove Component.particleMove
+--- @field particleUnstasis Component.particleUnstasis
+
+return ParticleComponents

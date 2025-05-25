@@ -1,0 +1,29 @@
+[H] BRIEF [/H]
+. Players must follow the rules of this mode to play across all areas, with a total of four stages, each corresponding to a region (randomized level).
+[T]All Zones Gambling Mode is a fusion of roulette and necrodancer version. Players must follow the rule of Roulette to play through, with a total of four level (so far), each corresponding to a zone (randomized floor).[/T]
+[T]This mode is more challenging in multiplayer with more than 4 players. Although the match is limited to 8 players, large amount of enemies makes it difficult for players to gain an advantage. Additional strategies are required to cope with these challenges.[/T]
+
+[H] RULE & GAMEPLAY CHANGES [/H]
+[T]This mode is mainly inherited from the standard mode, though some mechanics have been modified.[/T]
+[T]Players automatically engage in combat when they get close to enemies, but as long as the distance is no more than 2.65 tiles, combat won't be triggered. So you can avoid enemy combinations that you can't handle.[/T]
+[T]After each round, the next turn will no longer belong to the next player in current gambler queue, but will instead be at the head of queue (left). The position of characters in the queue is not randomly distributed; it is determined by the character’s "initiative" attribute, with higher values placed closer to the front.[/T]
+[T]Gamblers can join an ongoing match mid-game. Most enemies will have a one-turn delay upon min-joining, and players are not affected. Each level can have a maximum of 3 ongoing matches.[/T]
+[T]Additionally, there are changes to initial items, starting health, and other aspects.[/T]
+
+[H] CHARACTER ATTRIBUTES [/H]
+[h]Initiative[/h][T]: Determines your priority in a match. Among characters of the same initiative level, players always have a higher priority than enemy. Among enemy, the priority is determined by vanilla's action priority.[/T]
+[h]Luck[/h][T]: Increases the chance of triggering lucky by 30% per level. This applies to gun attacks, being attacked by guns, and item drops. If a trigger is successful, things will go in your favor.[/T]
+[h]Silence Status[/h][T]: Prevents use of any items.[/T]
+[h]Shrink Status[/h][T]: Character becomes smaller and takes double damage.[/T]
+[h]Charm Status[/h][T]: Temporarily joins the charm caster’s team.[/T]
+
+[H] INVENTORY & ITEM [/H]
+[T]You can purchase items and various equipments from the shop to gain advantages during a match. Items in shop will refresh infinitely, but their prices will gradually increase with each purchase. Equipments (such as rings, charms, etc.) are sold in limited quantities however, you can also find them in other areas of current level.[/T]
+[T]This mode introduces an interactive item bag that can be opened or closed by pressing 'item' key (default left + up). The cursor can be controlled using your arrow keys.[/T]
+[T]Rings and items picked up outside the match are automatically placed in your inventory. You can equip rings or use items by pressing 'interaction' key. During the match, you can switch rings only once per turn, and once an item is dragged out, it cannot be restored—a disposable item.[/T]
+[T]Players start with two disengage spells: red means live shell, green means blank shell. After activating with golds, use the gun to shoot yourself with specified type of bullet. You will be teleported to escape if successful.[/T]
+
+[H] TIPS [/H]
+[T]The only way to increase coin multiplier is by shooting yourself, so risks and rewards are always linked.[/T]
+[T]Nearly all enemy actions are predictable.[/T]
+The specific behaviors and traits of nearly all enemies can be found in the guide.

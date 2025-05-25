@@ -1,0 +1,22 @@
+[H] BRIEF [/H]
+[L]Playing Roulette requires you to use your wits, strategy and luck, using plasma cannons to fight against others or your friends. [/L]
+[L]If you have played similar gamerule, you can easily grasp the rules of this mode in under a minute. Even if you've played it before, I still recommend a quick review as there are a few minor changes.[/L]
+
+[H] START A MATCH [/H]
+[L]In the Roulette lobby, you will see that each room is equipped with a "Plasma Cannon Shrine". When you collide with them, special descriptions like "Shrine of Gambler (Small)" will pop up, which means a 2-player deathmatch, or "Shrine of Gambler (Bots)," indicating a 4-player deathmatch with bots involved. Although they all share the same image, the mode provided by each shrine is fixed.[/L]
+[Img]guide_1.png[/Img][T]	[/T][Img]guide_2.png[/Img]
+[L]After colliding with the shrine, your camera will be locked to the room, and you'll see a marked cursor on a specific tile, that means you have successfully joined the match. All participating players should stand on their respective tiles, and as long as there is more than one player the match will begin. If you can't find another player to fight, you can also try battling against bots.[/L]
+[Img]guide_3.png[/Img][T]	[/T][Img]guide_4.png[/Img]
+
+[H] RULE & GAMEPLAY [/H]
+[L]After the match begins, you see gambler queue which contains participants at the top of the screen, with the indicator pointing to the character currently owns the turn. The order of turns always loops from left to right. Game will also display the "Round" number. Whenever a new round starts, the gun will automatically be loaded with a mix of live and blank rounds under the influence of mysterious magic, the shrine will distribute various items to each gambler. Round would ends when all the bullets in the chamber of gun are used up, the next round continues once it occurs.[/L]
+[L]All bullets are either live or blanks. Live bullets basically deal 1 damage to a character, while blanks cannot be fired at all. After using a gun, you always end your current turn unless you shoot a blank at yourself.[/L]
+[L]Items, unlike gun, can generally be used unlimited times, except when the effect of the item specifies that it will skip your turn after use.[/L]
+[L]Each item, including guns, has its own usage. For example, the gun's "Use on opponent or self" requires you to, firstly control the cursor (by default, using the movement keys: up, left, down, right. Hold ctrl key to enable smart selection) to move to the gun’s location. Then press the Interaction key (default is the bomb key, left+down) to select the gun. Once selected, the gun will be outlined, and you can move the pointer to the character you want to shoot. Finally, press the 'interaction' key again, and you're done using the gun.[/L]
+[Img]guide_5.png[/Img][T]	[/T][Img]guide_6.png[/Img]
+
+[H] TIPS [/H]
+[L]Hold 'Cursor smart selection' key (default is LCtrl) while moving the cursor, it will automatically move to a selectable target. If you're playing with a controller, it's recommended to check the key binding. Mouse control is also supported on the PC.[/L]
+[L]Keep track of your bullet count, make good use of items, utilizing them effectively can significantly increase your chances of winning.[/L]
+You can refer to the guide to check the effects and detailed data for each item, it won't be elaborated on here.
+[T]GLHF[/T]
